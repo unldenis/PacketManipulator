@@ -7,7 +7,7 @@ new PacketListenerImpl(player);
 ```
 To eject the listener to a player just use
 ```java
-PacketListener.eject (player);
+PacketListener.eject(player);
 ```
 ```java
 public class PacketListenerImpl extends PacketListener {
