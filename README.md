@@ -3,11 +3,11 @@ PacketManipulator is an open-source Packet API. You can process incoming and out
 ## Example usage
 Once you have created your own implementation of PacketListener, to inject it to a player just initialize an object of your implementation.
 ```java
-    new PacketListenerImpl(player);
+new PacketListenerImpl(player);
 ```
 To eject the listener to a player just use
 ```java
-    PacketListener.eject (event.getPlayer ());
+PacketListener.eject (player);
 ```
 ```java
 public class PacketListenerImpl extends PacketListener {
