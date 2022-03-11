@@ -24,15 +24,6 @@ public class VersionUtil {
         return VersionEnum.valueOf(CLEAN_VERSION.toUpperCase()).getOrder() >= ve.getOrder();
     }
 
-    public static boolean isBelow(@NotNull VersionEnum ve) {
-        return VersionEnum.valueOf(CLEAN_VERSION.toUpperCase()).getOrder() <= ve.getOrder();
-    }
-
-    public static boolean isBetween(@NotNull VersionEnum ve1, @NotNull VersionEnum ve2) {
-        return isAbove(ve1) && isBelow(ve2);
-    }
-
-
     public enum VersionEnum {
 
         V1_8(1),

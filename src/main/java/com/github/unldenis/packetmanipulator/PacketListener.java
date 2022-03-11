@@ -43,7 +43,7 @@ public abstract class PacketListener extends ChannelDuplexHandler {
     }
 
     /**
-     * Read PacketPlayIn... and
+     * Read PacketPlayIn...
      */
     @Override
     public void channelRead(ChannelHandlerContext c, Object m) throws Exception {
