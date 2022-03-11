@@ -1,6 +1,14 @@
 # PacketManipulator
 PacketManipulator is an open-source Packet API. You can process incoming and outgoing packets on the server. Its main focus is on being easily included in any plugin to intercept a player's packets.
 ## Example usage
+Once you have created your own implementation of PacketListener, to inject it to a player just initialize an object of your implementation.
+```java
+    new PacketListenerImpl(player);
+```
+To eject the listener to a player just use
+```java
+    PacketListener.eject (event.getPlayer ());
+```
 ```java
 public class PacketListenerImpl extends PacketListener {
 
